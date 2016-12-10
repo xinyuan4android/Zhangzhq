@@ -17,6 +17,7 @@ import android.widget.ImageView;
 import com.iningke.baseproject.utils.LogUtils;
 
 /**
+ * 可缩放 可移动 imageview
  * Created by hxy on  2016/12/5.
  */
 public class MyZoomImageView extends ImageView implements View.OnTouchListener,
