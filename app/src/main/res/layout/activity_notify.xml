@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.iningke.zhangzhq.home.NotifyActivity">
+
+    <include layout="@layout/common_title" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x200"
+        android:scaleType="fitXY"
+        android:src="@mipmap/home_notify_img" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/notify_pullTo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/split_line"
+        android:dividerHeight="@dimen/x1"></com.handmark.pulltorefresh.library.PullToRefreshListView>
+</LinearLayout>

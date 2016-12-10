@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.iningke.zhangzhq.mine.workorder.WorkOrderRefuseActivity">
+
+    <include layout="@layout/common_title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/x20"
+        android:layout_marginLeft="@dimen/x22"
+        android:layout_marginTop="@dimen/x30"
+        android:text="维修员名单" />
+
+    <ListView
+        android:id="@+id/refuse_fixer_listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/refuse_btn_confirm"
+        style="@style/txt_btn2"
+        android:layout_margin="@dimen/x22"
+        android:layout_gravity="center_horizontal"
+        android:text="提交" />
+</LinearLayout>

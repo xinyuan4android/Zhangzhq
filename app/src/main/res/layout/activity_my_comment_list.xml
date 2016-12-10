@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.iningke.zhangzhq.mine.comment.MyCommentListActivity">
+
+    <include layout="@layout/common_title" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/myCommentList_pullTo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:divider="@color/split_line"
+        android:dividerHeight="@dimen/x2"></com.handmark.pulltorefresh.library.PullToRefreshListView>
+</LinearLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item_workOrderDetail_linear_serviceProgress"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x200"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/x22"
+        android:paddingRight="@dimen/x22"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="@dimen/x2"
+                android:layout_height="@dimen/x30"
+                android:background="@color/split_line" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/service_progress" />
+
+            <TextView
+                android:layout_width="@dimen/x2"
+                android:layout_height="match_parent"
+                android:background="@color/split_line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginTop="@dimen/x30"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/item_workOrderDetail_txt_serviceProgressDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="11-10 17:55"
+                        android:textColor="#6ecb46"
+                        android:textSize="@dimen/text_size_7" />
+
+                    <TextView
+                        android:id="@+id/item_workOrderDetail_txt_serviceProgressTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x16"
+                        android:text="费用审核"
+                        android:textColor="@color/txt_black"
+                        android:textSize="@dimen/text_size_3" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/item_workOrderDetail_img_serviceProgressBtn"
+                    android:layout_width="@dimen/x64"
+                    android:layout_height="@dimen/x64"
+                    android:clickable="true"
+                    android:src="@mipmap/fix_list"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/item_workOrderDetail_txt_serviceProgressBtn"
+                    android:layout_width="@dimen/x158"
+                    android:layout_height="@dimen/x60"
+                    android:background="@mipmap/btn_blue_corner"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="确认通过"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_5"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/item_workOrderDetail_txt_serviceProgressDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x20"
+                android:text="您已确认通过维修，请审核费用"
+                android:textColor="@color/txt_second_8b8d8f"
+                android:textSize="@dimen/text_size_4" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

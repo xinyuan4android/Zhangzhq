@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.iningke.zhangzhq.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/main_linearContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"></LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/split_line" />
+
+    <RadioGroup
+        android:id="@+id/main_radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/x5"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/main_radioBtn_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:button="@null"
+            android:checked="true"
+            android:clickable="true"
+            android:drawablePadding="@dimen/x5"
+            android:drawableTop="@drawable/selector_main_home_radiobtn"
+            android:gravity="center"
+            android:paddingBottom="@dimen/x5"
+            android:text="首页"
+            android:textColor="@color/selector_main_radiobtn"
+            android:textSize="@dimen/text_size_7" />
+
+        <RadioButton
+            android:id="@+id/main_radioBtn_manager"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:button="@null"
+            android:clickable="true"
+            android:drawablePadding="@dimen/x5"
+            android:drawableTop="@drawable/selector_main_manage_radiobtn"
+            android:gravity="center"
+            android:paddingBottom="@dimen/x5"
+            android:text="水电气管理"
+            android:textColor="@color/selector_main_radiobtn"
+            android:textSize="@dimen/text_size_7" />
+
+        <RadioButton
+            android:id="@+id/main_radioBtn_service"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:button="@null"
+            android:clickable="true"
+            android:drawablePadding="@dimen/x5"
+            android:drawableTop="@drawable/selector_main_service_radiobtn"
+            android:gravity="center"
+            android:paddingBottom="@dimen/x5"
+            android:text="维修服务"
+            android:textColor="@color/selector_main_radiobtn"
+            android:textSize="@dimen/text_size_7" />
+
+        <RadioButton
+            android:id="@+id/main_radioBtn_mine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:button="@null"
+            android:clickable="true"
+            android:drawablePadding="@dimen/x5"
+            android:drawableTop="@drawable/selector_main_mine_radiobtn"
+            android:gravity="center"
+            android:paddingBottom="@dimen/x5"
+            android:text="我的"
+            android:textColor="@color/selector_main_radiobtn"
+            android:textSize="@dimen/text_size_7" />
+    </RadioGroup>
+</LinearLayout>

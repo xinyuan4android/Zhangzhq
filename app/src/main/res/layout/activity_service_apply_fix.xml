@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".service.ServiceApplyFixActivity">
+
+    <include layout="@layout/common_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x100"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x22"
+                    android:text="姓        名"
+                    android:textColor="@color/txt_black"
+                    android:textSize="@dimen/text_size_3" />
+
+                <EditText
+                    android:id="@+id/service_applyFix_edit_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x34"
+                    android:background="@null"
+                    android:hint="请填写姓名"
+                    android:textColor="@color/txt_second_8b8d8f"
+                    android:textColorHint="@color/txt_hint"
+                    android:textSize="@dimen/text_size_3" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/split_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x100"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x22"
+                    android:text="联系电话"
+                    android:textColor="@color/txt_black"
+                    android:textSize="@dimen/text_size_3" />
+
+                <EditText
+                    android:id="@+id/service_applyFix_edit_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x34"
+                    android:background="@null"
+                    android:hint="请填写电话"
+                    android:textColor="@color/txt_second_8b8d8f"
+                    android:textColorHint="@color/txt_hint"
+                    android:textSize="@dimen/text_size_3" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/split_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x100"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x22"
+                    android:text="所在区域"
+                    android:textColor="@color/txt_black"
+                    android:textSize="@dimen/text_size_3" />
+
+                <LinearLayout
+                    android:id="@+id/service_applyFix_linear_selectArea"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/service_applyFix_txt_selectArea"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/x34"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:hint="请选择区域"
+                        android:textColor="@color/txt_second_8b8d8f"
+                        android:textColorHint="@color/txt_hint"
+                        android:textSize="@dimen/text_size_3" />
+
+                    <ImageView
+                        android:layout_width="@dimen/x16"
+                        android:layout_height="@dimen/x28"
+                        android:layout_marginRight="@dimen/x22"
+                        android:src="@mipmap/more" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/split_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x100"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x22"
+                    android:text="详细地址"
+                    android:textColor="@color/txt_black"
+                    android:textSize="@dimen/text_size_3" />
+
+                <EditText
+                    android:id="@+id/service_applyFix_edit_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x34"
+                    android:background="@null"
+                    android:hint="请填写地址"
+                    android:textColor="@color/txt_second_8b8d8f"
+                    android:textColorHint="@color/txt_hint"
+                    android:textSize="@dimen/text_size_3" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/split_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x100"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x22"
+                    android:text="报修类别"
+                    android:textColor="@color/txt_black"
+                    android:textSize="@dimen/text_size_3" />
+
+                <LinearLayout
+                    android:id="@+id/service_applyFix_linear_selectType"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/service_applyFix_txt_selectType"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/x34"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:hint="请选择类别"
+                        android:textColor="@color/txt_second_8b8d8f"
+                        android:textColorHint="@color/txt_hint"
+                        android:textSize="@dimen/text_size_3" />
+
+                    <ImageView
+                        android:layout_width="@dimen/x16"
+                        android:layout_height="@dimen/x28"
+                        android:layout_marginRight="@dimen/x22"
+                        android:src="@mipmap/more" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/split_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x260"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/x100"
+                    android:layout_marginLeft="@dimen/x22"
+                    android:gravity="center"
+                    android:text="报修详情"
+                    android:textColor="@color/txt_black"
+                    android:textSize="@dimen/text_size_3" />
+
+                <EditText
+                    android:id="@+id/service_applyFix_edit_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x34"
+                    android:background="@null"
+                    android:gravity="start"
+                    android:hint="请填写详情"
+                    android:paddingBottom="@dimen/x32"
+                    android:paddingTop="@dimen/x32"
+                    android:textColor="@color/txt_second_8b8d8f"
+                    android:textColorHint="@color/txt_hint"
+                    android:textSize="@dimen/text_size_3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x260"
+                android:layout_marginTop="@dimen/x14"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/service_applyFix_linear_uploadImg_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/x104"
+                            android:layout_height="@dimen/x104"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/service_applyfix_uploadimg" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/x18"
+                            android:text="上传图片（最多3张）"
+                            android:textColor="@color/txt_hint"
+                            android:textSize="@dimen/text_size_6" />
+                    </LinearLayout>
+
+                    <com.joooonho.SelectableRoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/service_applyFix_img_1"
+                        android:layout_width="@dimen/x190"
+                        android:layout_height="@dimen/x190"
+                        android:scaleType="centerCrop"
+                        android:visibility="gone"
+                        app:sriv_left_bottom_corner_radius="10dip"
+                        app:sriv_left_top_corner_radius="10dip"
+                        app:sriv_right_bottom_corner_radius="10dip"
+                        app:sriv_right_top_corner_radius="10dip" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/service_applyFix_linear_uploadImg_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="@dimen/x104"
+                            android:layout_height="@dimen/x104"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/service_applyfix_uploadimg" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/x18"
+                            android:text="上传图片（最多3张）"
+                            android:textColor="@color/txt_hint"
+                            android:textSize="@dimen/text_size_6" />
+                    </LinearLayout>
+
+                    <com.joooonho.SelectableRoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/service_applyFix_img_2"
+                        android:layout_width="@dimen/x190"
+                        android:layout_height="@dimen/x190"
+                        android:scaleType="centerCrop"
+                        android:visibility="gone"
+                        app:sriv_left_bottom_corner_radius="10dip"
+                        app:sriv_left_top_corner_radius="10dip"
+                        app:sriv_right_bottom_corner_radius="10dip"
+                        app:sriv_right_top_corner_radius="10dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/service_applyFix_linear_uploadImg_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="@dimen/x104"
+                            android:layout_height="@dimen/x104"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/service_applyfix_uploadimg" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/x18"
+                            android:text="上传图片（最多3张）"
+                            android:textColor="@color/txt_hint"
+                            android:textSize="@dimen/text_size_6" />
+                    </LinearLayout>
+
+                    <com.joooonho.SelectableRoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/service_applyFix_img_3"
+                        android:layout_width="@dimen/x190"
+                        android:layout_height="@dimen/x190"
+                        android:scaleType="centerCrop"
+                        android:visibility="gone"
+                        app:sriv_left_bottom_corner_radius="10dip"
+                        app:sriv_left_top_corner_radius="10dip"
+                        app:sriv_right_bottom_corner_radius="10dip"
+                        app:sriv_right_top_corner_radius="10dip" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x66"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/service_applyFix_txt_comfrim"
+                        android:layout_width="@dimen/x306"
+                        android:layout_height="@dimen/x88"
+                        android:background="@mipmap/btn_small_blue"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="日常报修"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/service_applyFix_txt_comfrimExpress"
+                        android:layout_width="@dimen/x306"
+                        android:layout_height="@dimen/x88"
+                        android:background="@mipmap/btn_small_yellow"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="报修申请"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_2" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

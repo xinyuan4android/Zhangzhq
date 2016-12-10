@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.iningke.zhangzhq.mine.stock.StockDetailActivity">
+
+    <include layout="@layout/common_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x180"
+        android:background="@color/theme"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前库存"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_5" />
+
+            <TextView
+                android:id="@+id/stockDetail_txt_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x14"
+                android:text="5836.00"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/x18"
+            android:layout_marginLeft="@dimen/x22"
+            android:layout_marginTop="@dimen/x28"
+            android:text="材料信息"
+            android:textColor="@color/txt_second_8b8d8f"
+            android:textSize="@dimen/text_size_5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x100"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/x22"
+        android:paddingRight="@dimen/x22">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="材料类型"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/text_size_3" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/stockDetail_txt_materialType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="消毒用品"
+            android:textColor="@color/txt_second_8b8d8f"
+            android:textSize="@dimen/text_size_3" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x2"
+        android:background="@color/split_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x100"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/x22"
+        android:paddingRight="@dimen/x22">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="品        名"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/text_size_3" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/stockDetail_txt_materialName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="青霉素"
+            android:textColor="@color/txt_second_8b8d8f"
+            android:textSize="@dimen/text_size_3" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x2"
+        android:background="@color/split_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x100"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/x22"
+        android:paddingRight="@dimen/x22">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="单        位"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/text_size_3" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/stockDetail_txt_materialUnit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="瓶"
+            android:textColor="@color/txt_second_8b8d8f"
+            android:textSize="@dimen/text_size_3" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x2"
+        android:background="@color/split_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x100"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/x22"
+        android:paddingRight="@dimen/x22">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="品        牌"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/text_size_3" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/stockDetail_txt_materialOrganization"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="临沂制药"
+            android:textColor="@color/txt_second_8b8d8f"
+            android:textSize="@dimen/text_size_3" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x2"
+        android:background="@color/split_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x100"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/x22"
+        android:paddingRight="@dimen/x22">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="单        价"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/text_size_3" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/stockDetail_txt_materialPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="￥56.00"
+            android:textColor="@color/txt_second_8b8d8f"
+            android:textSize="@dimen/text_size_3" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x2"
+        android:background="@color/split_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x100"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/x22"
+        android:paddingRight="@dimen/x22">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="备        注"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/text_size_3" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/stockDetail_txt_materialPs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注意阴凉环境下存放"
+            android:textColor="@color/txt_second_8b8d8f"
+            android:textSize="@dimen/text_size_3" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x2"
+        android:background="@color/split_line" />
+</LinearLayout>

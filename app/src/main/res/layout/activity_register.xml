@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.iningke.zhangzhq.login.RegisterActivity">
+
+    <include layout="@layout/common_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <com.iningke.zhangzhq.myview.CircleImageView
+                android:id="@+id/register_circleImg_avatar"
+                android:layout_width="@dimen/x156"
+                android:layout_height="@dimen/x156"
+                android:layout_marginTop="@dimen/x50"
+                android:src="@mipmap/register_avatar_camera" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x20"
+                android:text="上传头像"
+                android:textColor="@color/txt_second_8b8d8f"
+                android:textSize="@dimen/text_size_5" />
+
+            <LinearLayout
+                android:id="@+id/register_linear_selectArea"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x110"
+                android:layout_marginTop="@dimen/x50"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x22"
+                    android:text="所在地区"
+                    android:textColor="@color/txt_black"
+                    android:textSize="@dimen/text_size_4" />
+
+                <TextView
+                    android:id="@+id/register_txt_selectArea"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:text="请选择区域"
+                    android:textColor="@color/txt_hint"
+                    android:textSize="@dimen/text_size_4" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x22"
+                    android:src="@mipmap/more" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x2"
+                android:background="@color/split_line" />
+
+            <LinearLayout
+                android:id="@+id/register_linear_selectHospital"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x110"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x22"
+                    android:text="所在医院"
+                    android:textColor="@color/txt_black"
+                    android:textSize="@dimen/text_size_4" />
+
+                <TextView
+                    android:id="@+id/register_txt_selectHospital"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:text="请选择医院"
+                    android:textColor="@color/txt_hint"
+                    android:textSize="@dimen/text_size_4" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x22"
+                    android:src="@mipmap/more" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x2"
+                android:background="@color/split_line" />
+
+            <LinearLayout
+                android:id="@+id/register_linear_selectDepartment"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x110"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x22"
+                    android:text="所在科室"
+                    android:textColor="@color/txt_black"
+                    android:textSize="@dimen/text_size_4" />
+
+                <TextView
+                    android:id="@+id/register_txt_selectDepartment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:text="请选择科室"
+                    android:textColor="@color/txt_hint"
+                    android:textSize="@dimen/text_size_4" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x22"
+                    android:src="@mipmap/more" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x2"
+                android:background="@color/split_line" />
+
+            <LinearLayout
+                android:id="@+id/register_linear_selectRole"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x110"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x22"
+                    android:text="身        份"
+                    android:textColor="@color/txt_black"
+                    android:textSize="@dimen/text_size_4" />
+
+                <TextView
+                    android:id="@+id/register_txt_selectRole"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:text="请选择身份"
+                    android:textColor="@color/txt_hint"
+                    android:textSize="@dimen/text_size_4" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x22"
+                    android:src="@mipmap/more" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x2"
+                android:background="@color/split_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x110"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x22"
+                    android:text="真实姓名"
+                    android:textColor="@color/txt_black"
+                    android:textSize="@dimen/text_size_4" />
+
+                <EditText
+                    android:id="@+id/register_edit_realName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:background="@null"
+                    android:hint="请输入真实姓名"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/txt_second_8b8d8f"
+                    android:textColorHint="@color/txt_hint"
+                    android:textSize="@dimen/text_size_4" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x2"
+                android:background="@color/split_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x110"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x22"
+                    android:text="联系电话"
+                    android:textColor="@color/txt_black"
+                    android:textSize="@dimen/text_size_4" />
+
+                <EditText
+                    android:id="@+id/register_edit_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:background="@null"
+                    android:hint="请输入联系电话"
+                    android:inputType="phone"
+                    android:textColor="@color/txt_second_8b8d8f"
+                    android:textColorHint="@color/txt_hint"
+                    android:textSize="@dimen/text_size_4" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x2"
+                android:background="@color/split_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x110"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x22"
+                    android:text="邮        箱"
+                    android:textColor="@color/txt_black"
+                    android:textSize="@dimen/text_size_4" />
+
+                <EditText
+                    android:id="@+id/register_edit_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:background="@null"
+                    android:hint="请输入邮箱账号"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/txt_second_8b8d8f"
+                    android:textColorHint="@color/txt_hint"
+                    android:textSize="@dimen/text_size_4" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x2"
+                android:background="@color/split_line" />
+
+            <TextView
+                android:id="@+id/register_txt_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x60"
+                android:layout_marginBottom="@dimen/x60"
+                android:background="@mipmap/btn_backgroud"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_2" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

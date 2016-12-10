@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.iningke.zhangzhq.mine.applications.MyApplicaitonsDetailActivity">
+
+    <include layout="@layout/common_title" />
+
+    <LinearLayout
+        android:id="@+id/myApplication_linear_materialName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x10"
+        android:background="@color/white"
+        android:clickable="false"
+        android:gravity="center_vertical"
+        android:padding="@dimen/x30">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="材料名称"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/text_size_3" />
+
+        <TextView
+            android:id="@+id/myApplication_txt_materialName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:hint="请选择材料名称"
+            android:textColor="@color/txt_second_8b8d8f"
+            android:textColorHint="@color/txt_hint"
+            android:textSize="@dimen/text_size_3" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/myApplication_img_materialName_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/more" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x2"
+        android:background="@color/split_line" />
+
+    <LinearLayout
+        android:id="@+id/myApplication_linear_materialBrand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:clickable="false"
+        android:gravity="center_vertical"
+        android:padding="@dimen/x30">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="品        牌"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/text_size_3" />
+
+        <TextView
+            android:id="@+id/myApplication_txt_materialBrand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:hint="请选择材料品牌"
+            android:textColor="@color/txt_second_8b8d8f"
+            android:textColorHint="@color/txt_hint"
+            android:textSize="@dimen/text_size_3" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/myApplication_img_materialBrand_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/more" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x2"
+        android:background="@color/split_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/x30">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数        量"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/text_size_3" />
+
+        <EditText
+            android:id="@+id/myApplication_txt_materialUsing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:background="@null"
+            android:gravity="start"
+            android:hint="请输入材料数量"
+            android:textColor="@color/txt_second_8b8d8f"
+            android:textColorHint="@color/txt_hint"
+            android:textSize="@dimen/text_size_3" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x2"
+        android:background="@color/split_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/x30">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="理        由"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/text_size_3" />
+
+        <EditText
+            android:id="@+id/myApplication_txt_materialReason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:background="@null"
+            android:gravity="start"
+            android:hint="请输入申请理由"
+            android:textColor="@color/txt_second_8b8d8f"
+            android:textColorHint="@color/txt_hint"
+            android:textSize="@dimen/text_size_3" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x2"
+        android:background="@color/split_line" />
+
+    <TextView
+        android:id="@+id/myApplication_txt_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/x60"
+        android:background="@mipmap/btn_backgroud"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_2" />
+</LinearLayout>

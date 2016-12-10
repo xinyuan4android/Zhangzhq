@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.iningke.zhangzhq.service.ServiceQueryCostDetailActivity">
+
+    <include layout="@layout/common_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/x36"
+                android:paddingLeft="@dimen/x22"
+                android:paddingTop="@dimen/x36">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="项目名称"
+                        android:textColor="@color/txt_black"
+                        android:textSize="@dimen/text_size_3" />
+
+                    <TextView
+                        android:id="@+id/service_queryCost_detail_projectName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x30"
+                        android:text="值班室的灯泡坏了"
+                        android:textColor="@color/txt_second_8b8d8f"
+                        android:textSize="@dimen/text_size_3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x34"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="材料名称"
+                        android:textColor="@color/txt_black"
+                        android:textSize="@dimen/text_size_3" />
+
+                    <TextView
+                        android:id="@+id/service_queryCost_detail_materialName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x30"
+                        android:text="灯泡"
+                        android:textColor="@color/txt_second_8b8d8f"
+                        android:textSize="@dimen/text_size_3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x34"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="数        量"
+                        android:textColor="@color/txt_black"
+                        android:textSize="@dimen/text_size_3" />
+
+                    <TextView
+                        android:id="@+id/service_queryCost_detail_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x30"
+                        android:text="1"
+                        android:textColor="@color/txt_second_8b8d8f"
+                        android:textSize="@dimen/text_size_3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x34"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="单        价"
+                        android:textColor="@color/txt_black"
+                        android:textSize="@dimen/text_size_3" />
+
+                    <TextView
+                        android:id="@+id/service_queryCost_detail_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x30"
+                        android:text="10"
+                        android:textColor="@color/txt_second_8b8d8f"
+                        android:textSize="@dimen/text_size_3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x34"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="工        时"
+                        android:textColor="@color/txt_black"
+                        android:textSize="@dimen/text_size_3" />
+
+                    <TextView
+                        android:id="@+id/service_queryCost_detail_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x30"
+                        android:text="2"
+                        android:textColor="@color/txt_second_8b8d8f"
+                        android:textSize="@dimen/text_size_3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x34"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="其他费用"
+                        android:textColor="@color/txt_black"
+                        android:textSize="@dimen/text_size_3" />
+
+                    <TextView
+                        android:id="@+id/service_queryCost_detail_otherFee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x30"
+                        android:text="无"
+                        android:textColor="@color/txt_second_8b8d8f"
+                        android:textSize="@dimen/text_size_3" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x100"
+                android:layout_marginTop="@dimen/x14"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/x22">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="总  金  额"
+                    android:textColor="@color/txt_black"
+                    android:textSize="@dimen/text_size_3" />
+
+                <TextView
+                    android:id="@+id/service_queryCost_detail_totalAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:text="30"
+                    android:textColor="@color/txt_second_8b8d8f"
+                    android:textSize="@dimen/text_size_3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x14"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/x22"
+                android:paddingTop="@dimen/x36">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="施工员名单"
+                    android:textColor="@color/txt_black"
+                    android:textSize="@dimen/text_size_3" />
+
+                <TextView
+                    android:layout_width="@dimen/x30"
+                    android:layout_height="@dimen/x64" />
+
+                <com.iningke.zhangzhq.myview.MyGridView
+                    android:id="@+id/service_queryCost_detail_gridView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:numColumns="2"></com.iningke.zhangzhq.myview.MyGridView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x14"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/x36"
+                android:paddingLeft="@dimen/x22"
+                android:paddingTop="@dimen/x36">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="情况说明"
+                    android:textColor="@color/txt_black"
+                    android:textSize="@dimen/text_size_3" />
+
+                <TextView
+                    android:id="@+id/service_queryCost_detail_information"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginRight="@dimen/x22"
+                    android:text="螺丝不防滑，换了两个螺丝"
+                    android:textColor="@color/txt_second_8b8d8f"
+                    android:textSize="@dimen/text_size_3" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

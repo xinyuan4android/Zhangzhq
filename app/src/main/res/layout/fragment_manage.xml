@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".manage.ManageFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include layout="@layout/common_title" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/manage_background" />
+
+        <ImageView
+            android:id="@+id/manage_img_queryWater"
+            android:layout_width="@dimen/x496"
+            android:layout_height="@dimen/x116"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/manage_query_water" />
+
+        <ImageView
+            android:id="@+id/manage_img_queryElectric"
+            android:layout_width="@dimen/x496"
+            android:layout_height="@dimen/x116"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/x30"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/manage_query_electric" />
+
+        <ImageView
+            android:id="@+id/manage_img_queryOxygen"
+            android:layout_width="@dimen/x496"
+            android:layout_height="@dimen/x116"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/x30"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/manage_query_oxygen" />
+    </LinearLayout>
+
+
+</RelativeLayout>

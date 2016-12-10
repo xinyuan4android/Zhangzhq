@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/x30"
+    android:paddingLeft="@dimen/x22"
+    android:paddingRight="@dimen/x22"
+    android:paddingTop="@dimen/x30">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/item_safeHistory_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="会议通知1text"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/text_size_3"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/item_safeHistory_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="2016-11-06"
+            android:textColor="@color/txt_second_8b8d8f"
+            android:textSize="@dimen/text_size_6" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_safeHistory_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x26"
+        android:ellipsize="end"
+        android:lines="2"
+        android:text="前天上午，四川大学华西医院呼吸科，一病人家属不相信护士配药过程，欲强行进入治疗室。护士反复告知家属不能进入并把门关上。谁知家属情绪激动，一怒之下撞门而入，结果导致护士面部受伤，缝合了8针。现肇事者被治安拘留10日。"
+        android:textColor="@color/txt_detail_3d3d3d"
+        android:textSize="@dimen/text_size_5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/item_safeHistory_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x20"
+            android:text="外科楼A区1栋10楼1001室"
+            android:textColor="@color/txt_second_8b8d8f"
+            android:textSize="@dimen/text_size_6" />
+    </LinearLayout>
+
+</LinearLayout>

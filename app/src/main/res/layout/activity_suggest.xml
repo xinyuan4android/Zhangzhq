@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.iningke.zhangzhq.mine.SuggestActivity">
+
+    <include layout="@layout/common_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x534"
+        android:background="@color/white"
+        android:padding="@dimen/x22">
+
+        <EditText
+            android:id="@+id/suggest_edit_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="start"
+            android:hint="请把您的意见告诉我们，我们努力做的更好"
+            android:textColor="@color/txt_second_8b8d8f"
+            android:textColorHint="@color/txt_hint"
+            android:textSize="@dimen/text_size_5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x88"
+        android:layout_marginTop="@dimen/x14"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/suggest_edit_contact"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x22"
+            android:background="@null"
+            android:ellipsize="end"
+            android:hint="您的手机号或QQ号（选填）"
+            android:lines="1"
+            android:textColor="@color/txt_second_8b8d8f"
+            android:textColorHint="@color/txt_hint"
+            android:textSize="@dimen/text_size_5" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/suggest_btn_confirm"
+        android:layout_width="@dimen/x540"
+        android:layout_height="@dimen/x88"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/x60"
+        android:background="@mipmap/btn_backgroud"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_2" />
+</LinearLayout>

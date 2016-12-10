@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".mine.workorder.WorkOrderDetailActivity">
+
+    <include layout="@layout/common_title" />
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/workOrder_detail_pullToScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/x100"
+                    android:layout_height="@dimen/x100"
+                    android:layout_marginBottom="@dimen/x20"
+                    android:layout_marginLeft="@dimen/x22"
+                    android:layout_marginTop="@dimen/x20"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/item_avatar_default_small" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/workOrder_detail_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="张三"
+                        android:textColor="@color/txt_black"
+                        android:textSize="@dimen/text_size_3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x16"
+                        android:text="单号  654320"
+                        android:textColor="@color/txt_second_8b8d8f"
+                        android:textSize="@dimen/text_size_5" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/workOrder_detail_linear_spread"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x44"
+                android:background="@drawable/selector_listview"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/spread" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x2"
+                android:background="@color/split_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/workOrder_detail_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/x30"
+                    android:paddingLeft="@dimen/x22"
+                    android:paddingRight="@dimen/x22"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x30"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="联系电话"
+                            android:textColor="@color/txt_black"
+                            android:textSize="@dimen/text_size_3" />
+
+                        <TextView
+                            android:id="@+id/workOrder_detail_txt_phoneNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/x40"
+                            android:text="1595552222"
+                            android:textColor="@color/txt_second_8b8d8f"
+                            android:textSize="@dimen/text_size_3" />
+
+                        <ImageView
+                            android:id="@+id/workOrder_detail_callPhone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/x52"
+                            android:paddingLeft="@dimen/x20"
+                            android:src="@mipmap/call" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x40"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="所在区域"
+                            android:textColor="@color/txt_black"
+                            android:textSize="@dimen/text_size_3" />
+
+                        <TextView
+                            android:id="@+id/workOrder_detail_area"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/x40"
+                            android:text="北区教工宿舍"
+                            android:textColor="@color/txt_second_8b8d8f"
+                            android:textSize="@dimen/text_size_3" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x40"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="详细地址"
+                            android:textColor="@color/txt_black"
+                            android:textSize="@dimen/text_size_3" />
+
+                        <TextView
+                            android:id="@+id/workOrder_detail_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/x40"
+                            android:text="5楼520"
+                            android:textColor="@color/txt_second_8b8d8f"
+                            android:textSize="@dimen/text_size_3" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x40"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="报修类别"
+                            android:textColor="@color/txt_black"
+                            android:textSize="@dimen/text_size_3" />
+
+                        <TextView
+                            android:id="@+id/workOrder_detail_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/x40"
+                            android:text="水管漏水"
+                            android:textColor="@color/txt_second_8b8d8f"
+                            android:textSize="@dimen/text_size_3" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x40"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="报修详情"
+                            android:textColor="@color/txt_black"
+                            android:textSize="@dimen/text_size_3" />
+
+                        <TextView
+                            android:id="@+id/workOrder_detail_description"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/x40"
+                            android:text="水管漏水水管漏水水管漏水水管漏水水管漏水水管漏水水管漏水"
+                            android:textColor="@color/txt_second_8b8d8f"
+                            android:textSize="@dimen/text_size_3" />
+                    </LinearLayout>
+
+                    <com.iningke.zhangzhq.myview.MyGridView
+                        android:id="@+id/workOrder_detail_gridView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x36"
+                        android:numColumns="3"></com.iningke.zhangzhq.myview.MyGridView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/workOrder_detail_btn_refuse"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@mipmap/btn_small_blue"
+                                android:gravity="center"
+                                android:text="拒绝"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size_3" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/workOrder_detail_btn_accept"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@mipmap/btn_small_yellow"
+                                android:gravity="center"
+                                android:text="受理"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_size_3" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/workOrder_detail_linear_scroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x44"
+                    android:background="@drawable/selector_listview"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/scroll" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/x18"
+                android:layout_marginLeft="@dimen/x22"
+                android:layout_marginTop="@dimen/x28"
+                android:text="服务进度"
+                android:textColor="@color/txt_second_8b8d8f"
+                android:textSize="@dimen/text_size_5" />
+
+            <LinearLayout
+                android:id="@+id/workOrder_detail_linear_progressContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/workOrder_detail_linear_progressCheck"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x200"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/x22"
+                android:paddingRight="@dimen/x22"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="@dimen/x2"
+                        android:layout_height="@dimen/x30"
+                        android:background="@color/split_line" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/service_progress" />
+
+                    <TextView
+                        android:layout_width="@dimen/x2"
+                        android:layout_height="match_parent"
+                        android:background="@color/split_line" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_marginTop="@dimen/x30"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="11-10 17:55"
+                                android:textColor="#6ecb46"
+                                android:textSize="@dimen/text_size_7" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/x16"
+                                android:text="费用审核"
+                                android:textColor="@color/txt_black"
+                                android:textSize="@dimen/text_size_3" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="@dimen/x64"
+                            android:layout_height="@dimen/x64"
+                            android:src="@mipmap/fix_list" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x20"
+                        android:text="您已确认通过维修，请审核费用"
+                        android:textColor="@color/txt_second_8b8d8f"
+                        android:textSize="@dimen/text_size_4" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/workOrder_detail_linear_progressFinish"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x200"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/x22"
+                android:paddingRight="@dimen/x22"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="@dimen/x2"
+                        android:layout_height="@dimen/x30"
+                        android:background="@color/split_line" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/service_progress" />
+
+                    <TextView
+                        android:layout_width="@dimen/x2"
+                        android:layout_height="match_parent"
+                        android:background="@color/split_line" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_marginTop="@dimen/x30"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="11-10 17:55"
+                                android:textColor="#6ecb46"
+                                android:textSize="@dimen/text_size_7" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/x16"
+                                android:text="维修完毕"
+                                android:textColor="@color/txt_black"
+                                android:textSize="@dimen/text_size_3" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/workOrder_detail_txtBtn_progressFinish"
+                            android:layout_width="@dimen/x158"
+                            android:layout_height="@dimen/x60"
+                            android:background="@mipmap/btn_blue_corner"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="确认通过"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_5" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x20"
+                        android:text="已维修完毕，请确认维修单"
+                        android:textColor="@color/txt_second_8b8d8f"
+                        android:textSize="@dimen/text_size_4" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/workOrder_detail_linear_progressAccept"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x200"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/x22"
+                android:paddingRight="@dimen/x22"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="@dimen/x2"
+                        android:layout_height="@dimen/x30"
+                        android:background="@color/split_line" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/service_progress" />
+
+                    <TextView
+                        android:layout_width="@dimen/x2"
+                        android:layout_height="match_parent"
+                        android:background="@color/split_line" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_marginTop="@dimen/x30"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="11-10 17:55"
+                                android:textColor="#6ecb46"
+                                android:textSize="@dimen/text_size_7" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/x16"
+                                android:text="工人受理"
+                                android:textColor="@color/txt_black"
+                                android:textSize="@dimen/text_size_3" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/workOrder_detail_txtBtn_progressAccept"
+                            android:layout_width="@dimen/x158"
+                            android:layout_height="@dimen/x60"
+                            android:background="@mipmap/btn_blue_corner"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="联系对方"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_5" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x20"
+                        android:text="您已经受理mm的维修申请"
+                        android:textColor="@color/txt_second_8b8d8f"
+                        android:textSize="@dimen/text_size_4" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/workOrder_detail_linear_progressComment"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x200"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/x22"
+                android:paddingRight="@dimen/x22"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="@dimen/x2"
+                        android:layout_height="@dimen/x30"
+                        android:background="@color/split_line" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/service_progress" />
+
+                    <TextView
+                        android:layout_width="@dimen/x2"
+                        android:layout_height="match_parent"
+                        android:background="@color/split_line" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_marginTop="@dimen/x30"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="11-10 17:55"
+                                android:textColor="#6ecb46"
+                                android:textSize="@dimen/text_size_7" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/x16"
+                                android:text="评估审核"
+                                android:textColor="@color/txt_black"
+                                android:textSize="@dimen/text_size_3" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="@dimen/x158"
+                            android:layout_height="@dimen/x60"
+                            android:background="@mipmap/btn_blue_corner"
+                            android:gravity="center"
+                            android:text="开始维修"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_5" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x20"
+                        android:text="报修申请已评估审核通过"
+                        android:textColor="@color/txt_second_8b8d8f"
+                        android:textSize="@dimen/text_size_4" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/workOrder_detail_linear_progressApply"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x200"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/x22"
+                android:paddingRight="@dimen/x22"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="@dimen/x2"
+                        android:layout_height="@dimen/x30"
+                        android:background="@color/split_line" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/service_progress" />
+
+                    <TextView
+                        android:layout_width="@dimen/x2"
+                        android:layout_height="match_parent"
+                        android:background="@color/split_line" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:layout_marginTop="@dimen/x30"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="11-10 17:55"
+                                android:textColor="#6ecb46"
+                                android:textSize="@dimen/text_size_7" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/x16"
+                                android:text="报修申请"
+                                android:textColor="@color/txt_black"
+                                android:textSize="@dimen/text_size_3" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/x20"
+                        android:text="mm11-2 15:10 提交报修申请"
+                        android:textColor="@color/txt_second_8b8d8f"
+                        android:textSize="@dimen/text_size_4" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/x18"
+                    android:layout_marginLeft="@dimen/x22"
+                    android:layout_marginTop="@dimen/x28"
+                    android:text="服务评论"
+                    android:textColor="@color/txt_second_8b8d8f"
+                    android:textSize="@dimen/text_size_5" />
+            </LinearLayout>
+
+            <com.iningke.zhangzhq.myview.MyListView
+                android:id="@+id/workOrder_detail_commentList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.iningke.zhangzhq.myview.MyListView>
+        </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/x16"
+        android:paddingTop="@dimen/x16">
+
+        <LinearLayout
+            android:id="@+id/workOrder_detail_linear_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/x88"
+            android:background="@mipmap/comment_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x28"
+                android:src="@mipmap/comment_pen" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x28"
+                android:text="我也来说一句"
+                android:textColor="@color/txt_hint"
+                android:textSize="@dimen/text_size_4" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

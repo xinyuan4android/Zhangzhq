@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "G:\\work\\Zhangzhq\\cropImageLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\crop__divider.9.png",
+        "source": "G:\\work\\Zhangzhq\\cropImageLib\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\crop__divider.9.png"
+    },
+    {
+        "merged": "F:\\my\\android-crop-master\\lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\crop__ic_cancel.png",
+        "source": "F:\\my\\android-crop-master\\lib\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\crop__ic_cancel.png"
+    },
+    {
+        "merged": "G:\\work\\Zhangzhq\\cropImageLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\crop__ic_cancel.png",
+        "source": "G:\\work\\Zhangzhq\\cropImageLib\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\crop__ic_cancel.png"
+    },
+    {
+        "merged": "G:\\work\\Zhangzhq\\cropImageLib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\crop__ic_done.png",
+        "source": "G:\\work\\Zhangzhq\\cropImageLib\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\crop__ic_done.png"
+    },
+    {
+        "merged": "F:\\my\\android-crop-master\\lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\crop__divider.9.png",
+        "source": "F:\\my\\android-crop-master\\lib\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\crop__divider.9.png"
+    },
+    {
+        "merged": "F:\\my\\android-crop-master\\lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v4\\crop__ic_done.png",
+        "source": "F:\\my\\android-crop-master\\lib\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v4\\crop__ic_done.png"
+    }
+]

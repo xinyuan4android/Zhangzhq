@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".service.ServiceQueryCostDetailListActivity">
+
+    <include layout="@layout/common_title" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x14" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x100"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <include layout="@layout/item_service_querycost_listview" />
+    </LinearLayout>
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/service_queryCost_detail_pullTo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/x14"
+        android:divider="@color/split_line"
+        android:dividerHeight="@dimen/x1"></com.handmark.pulltorefresh.library.PullToRefreshListView>
+</LinearLayout>

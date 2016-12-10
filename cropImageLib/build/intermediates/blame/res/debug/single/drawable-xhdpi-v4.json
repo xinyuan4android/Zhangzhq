@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "F:\\my\\android-crop-master\\lib\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\crop__divider.9.png",
+        "source": "F:\\my\\android-crop-master\\lib\\src\\main\\res\\drawable-xhdpi\\crop__divider.9.png"
+    },
+    {
+        "merged": "F:\\my\\android-crop-master\\lib\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\crop__ic_cancel.png",
+        "source": "F:\\my\\android-crop-master\\lib\\src\\main\\res\\drawable-xhdpi\\crop__ic_cancel.png"
+    },
+    {
+        "merged": "G:\\work\\Zhangzhq\\cropImageLib\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\crop__divider.9.png",
+        "source": "G:\\work\\Zhangzhq\\cropImageLib\\src\\main\\res\\drawable-xhdpi\\crop__divider.9.png"
+    },
+    {
+        "merged": "G:\\work\\Zhangzhq\\cropImageLib\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\crop__ic_cancel.png",
+        "source": "G:\\work\\Zhangzhq\\cropImageLib\\src\\main\\res\\drawable-xhdpi\\crop__ic_cancel.png"
+    },
+    {
+        "merged": "G:\\work\\Zhangzhq\\cropImageLib\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\crop__ic_done.png",
+        "source": "G:\\work\\Zhangzhq\\cropImageLib\\src\\main\\res\\drawable-xhdpi\\crop__ic_done.png"
+    },
+    {
+        "merged": "G:\\work\\Zhangzhq\\cropImageLib\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\crop__tile.png",
+        "source": "G:\\work\\Zhangzhq\\cropImageLib\\src\\main\\res\\drawable-xhdpi\\crop__tile.png"
+    },
+    {
+        "merged": "F:\\my\\android-crop-master\\lib\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\crop__ic_done.png",
+        "source": "F:\\my\\android-crop-master\\lib\\src\\main\\res\\drawable-xhdpi\\crop__ic_done.png"
+    },
+    {
+        "merged": "F:\\my\\android-crop-master\\lib\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\crop__tile.png",
+        "source": "F:\\my\\android-crop-master\\lib\\src\\main\\res\\drawable-xhdpi\\crop__tile.png"
+    }
+]

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="theme">#38CFDA</color>
+    <color name="txt_second">#666666</color>
+    <color name="txt_second_8b8d8f">#8b8d8f</color>
+    <color name="txt_black">#050505</color>
+    <color name="txt_detail_3d3d3d">#3d3d3d</color>
+    <color name="txt_hint">#c8c8c8</color>
+    <color name="main_radio_unCheck">#8b8d8f</color>
+    <color name="background">#F1F1F1</color>
+    <color name="white">#ffffff</color>
+    <color name="item_press">#EFEDEE</color>
+    <color name="split_line">#EAEAEA</color>
+    <color name="orange">#FF9429</color>
+    <color name="green">#6ecb46</color>
+</resources>

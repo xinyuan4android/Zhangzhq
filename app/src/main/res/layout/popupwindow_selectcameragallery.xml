@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#50000000"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/x22"
+        android:background="@drawable/shape_corners10"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/popup_camera"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x88"
+            android:gravity="center"
+            android:text="拍照"
+            android:textColor="#666666"
+            android:textSize="@dimen/text_size_3" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x1"
+            android:background="@color/split_line" />
+
+        <TextView
+            android:id="@+id/popup_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x88"
+            android:gravity="center"
+            android:text="从手机相册中选择"
+            android:textColor="#666666"
+            android:textSize="@dimen/text_size_3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x88"
+        android:layout_marginBottom="@dimen/x22"
+        android:layout_marginLeft="@dimen/x22"
+        android:layout_marginRight="@dimen/x22"
+        android:background="@drawable/shape_corners10"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/popup_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/txt_hint"
+            android:textSize="@dimen/text_size_3" />
+
+    </LinearLayout>
+</LinearLayout>

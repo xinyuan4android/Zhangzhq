@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.iningke.zhangzhq.manage.ManageQueryActivity">
+
+    <include layout="@layout/common_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_marginTop="@dimen/x62"
+                android:text="设置宿舍信息"
+                android:visibility="gone"
+                android:textColor="@color/txt_second_8b8d8f" />
+
+            <LinearLayout
+                android:id="@+id/manage_query_selectArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x24"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/x30">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="所在区域"
+                    android:textColor="@color/txt_black"
+                    android:textSize="@dimen/text_size_3" />
+
+                <TextView
+                    android:id="@+id/manage_query_txt_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:hint="请选择区域"
+                    android:textColor="@color/txt_second"
+                    android:textColorHint="@color/txt_hint"
+                    android:textSize="@dimen/text_size_3" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="@dimen/x16"
+                    android:layout_height="@dimen/x28"
+                    android:src="@mipmap/more" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/split_line" />
+
+            <LinearLayout
+                android:id="@+id/manage_query_selectBuilding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/x30">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="建  筑  楼"
+                    android:textColor="@color/txt_black"
+                    android:textSize="@dimen/text_size_3" />
+
+                <TextView
+                    android:id="@+id/manage_query_txt_building"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:hint="请选择建筑楼"
+                    android:textColor="@color/txt_second"
+                    android:textColorHint="@color/txt_hint"
+                    android:textSize="@dimen/text_size_3" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="@dimen/x16"
+                    android:layout_height="@dimen/x28"
+                    android:src="@mipmap/more" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/split_line" />
+
+            <LinearLayout
+                android:id="@+id/manage_query_selectFloor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/x30">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="楼        层"
+                    android:textColor="@color/txt_black"
+                    android:textSize="@dimen/text_size_3" />
+
+                <TextView
+                    android:id="@+id/manage_query_txt_floor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:hint="请选择楼层"
+                    android:textColor="@color/txt_second"
+                    android:textColorHint="@color/txt_hint"
+                    android:textSize="@dimen/text_size_3" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="@dimen/x16"
+                    android:layout_height="@dimen/x28"
+                    android:src="@mipmap/more" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/split_line" />
+
+            <LinearLayout
+                android:id="@+id/manage_query_selectRoom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/x30">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="科室或房间号"
+                    android:textColor="@color/txt_black"
+                    android:textSize="@dimen/text_size_3" />
+
+                <TextView
+                    android:id="@+id/manage_query_txt_room"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:hint="请选择科室或房间号"
+                    android:textColor="@color/txt_second"
+                    android:textColorHint="@color/txt_hint"
+                    android:textSize="@dimen/text_size_3" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="@dimen/x16"
+                    android:layout_height="@dimen/x28"
+                    android:src="@mipmap/more" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/split_line" />
+
+            <LinearLayout
+                android:id="@+id/manage_query_startTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:padding="@dimen/x30">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="起始时间"
+                    android:textColor="@color/txt_black"
+                    android:textSize="@dimen/text_size_3" />
+
+                <TextView
+                    android:id="@+id/manage_query_txt_startTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:hint="请选择起始时间"
+                    android:textColor="@color/txt_second"
+                    android:textColorHint="@color/txt_hint"
+                    android:textSize="@dimen/text_size_3" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="@dimen/x16"
+                    android:layout_height="@dimen/x28"
+                    android:src="@mipmap/more" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x1"
+                android:background="@color/split_line" />
+
+            <LinearLayout
+                android:id="@+id/manage_query_endTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:padding="@dimen/x30">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="截止时间"
+                    android:textColor="@color/txt_black"
+                    android:textSize="@dimen/text_size_3" />
+
+                <TextView
+                    android:id="@+id/manage_query_txt_endTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:hint="请选择起始时间"
+                    android:textColor="@color/txt_second"
+                    android:textColorHint="@color/txt_hint"
+                    android:textSize="@dimen/text_size_3" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="@dimen/x16"
+                    android:layout_height="@dimen/x28"
+                    android:src="@mipmap/more" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/manage_query_txtBtn"
+                style="@style/txt_btn"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/x66"
+                android:text="查询" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

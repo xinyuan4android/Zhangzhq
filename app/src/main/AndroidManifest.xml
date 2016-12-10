@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.iningke.zhangzhq">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <!-- <meta-data -->
+        <!-- android:name="com.bumptech.glide.samples.svg.SvgModule" -->
+        <!-- android:value="GlideModule" /> -->
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".GuideActivity" />
+        <!-- 蒲公英 AppId -->
+        <meta-data
+            android:name="PGYER_APPID"
+            android:value="593ce7a4f3b783fb7f0d19f93d7f1c26" />
+
+        <activity android:name=".TextActivity" />
+        <activity android:name=".manage.ManageQueryActivity" />
+        <activity
+            android:name=".activity.SelectAreaActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity android:name=".manage.ManageShowActivity" />
+        <activity android:name=".manage.ManageHistoryActivity" />
+        <activity android:name=".mine.workorder.MineFixActivity" />
+        <activity android:name=".service.ServiceQueryInformationActivity" />
+        <activity android:name=".service.ServiceQueryInformationResultActivity" />
+        <activity android:name=".service.ServiceApplyFixActivity" />
+        <activity android:name=".service.ServiceQueryCostActivity" />
+        <activity android:name=".service.ServiceQueryCostDetailListActivity" />
+        <activity android:name=".service.ServiceQueryCostDetailActivity" />
+        <activity android:name=".home.NotifyActivity" />
+        <activity android:name=".mine.SuggestActivity" />
+        <activity android:name=".mine.workorder.WorkOrderDetailActivity" />
+        <activity android:name=".mine.workorder.CommentActivity" />
+        <activity android:name=".home.GoodsManageActivity" />
+        <activity android:name=".mine.applications.MyApplicationsListActivity" />
+        <activity android:name=".mine.applications.MyApplicaitonsDetailActivity" />
+        <activity android:name=".mine.use.MyUsingListActivity" />
+        <activity android:name=".mine.use.MyUsingDetailActivity" />
+        <activity android:name=".mine.stock.StockQueryActivity" />
+        <activity android:name=".mine.stock.StockDetailActivity" />
+        <activity android:name=".home.MaterialManageActivity" />
+        <activity android:name=".mine.comment.MyCommentListActivity" />
+        <activity android:name=".mine.collections.MyCollectionsListActivity" />
+        <activity android:name=".mine.changePhone.ChangePhoneActivity" />
+        <activity android:name=".mine.changePhone.ChangePhoneNextActivity" />
+        <activity android:name=".mine.changpassword.ChangePasswordActivity" />
+        <activity android:name=".login.LoginActivity" />
+        <activity android:name=".login.RegisterActivity" />
+        <activity android:name=".home.DeviceManageResultActivity" />
+        <activity android:name=".home.DeviceInfoFactoryInfoActivity" />
+        <activity
+            android:name=".zxing.activity.CaptureActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity android:name=".home.DeviceInformationActivity" />
+        <activity android:name=".mine.userinfo.UserBaseInformationActivity" />
+        <activity android:name=".mine.userinfo.UserInformationActivity" />
+        <activity android:name=".activity.MyTestTransformMatrixVIewActivity" />
+        <activity android:name=".service.ServiceSafeActivity" />
+        <activity android:name=".mine.safe.SafeHistoryListActivity" />
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+        <activity android:name=".mine.workorder.WorkOrderRefuseActivity" />
+        <activity android:name=".mine.workorder.WorkOrderDetailWorkManActivity" />
+        <activity android:name=".service.ServiceFixCostCheckActivity"></activity>
+    </application>
+
+</manifest>

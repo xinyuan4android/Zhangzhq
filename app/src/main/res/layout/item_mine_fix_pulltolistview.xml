@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_listview"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/x28">
+
+        <TextView
+            android:id="@+id/item_mine_fix_orderNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x22"
+            android:text="单号 80836578"
+            android:textColor="@color/txt_second_8b8d8f"
+            android:textSize="@dimen/text_size_5" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/item_mine_fix_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/x22"
+            android:text="待受理"
+            android:textColor="@color/theme"
+            android:textSize="@dimen/text_size_5" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_mine_fix_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x22"
+        android:layout_marginTop="@dimen/x22"
+        android:text="11-05 17:55"
+        android:textColor="@color/txt_second_8b8d8f"
+        android:textSize="@dimen/text_size_7" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:layout_marginTop="@dimen/x24"
+        android:background="@color/split_line" />
+
+    <TextView
+        android:id="@+id/item_mine_fix_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x22"
+        android:layout_marginTop="@dimen/x26"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="员工title"
+        android:textColor="@color/txt_black"
+        android:textSize="@dimen/text_size_3" />
+
+    <TextView
+        android:id="@+id/item_mine_fix_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x22"
+        android:layout_marginTop="@dimen/x20"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="员工title"
+        android:textColor="@color/txt_detail_3d3d3d"
+        android:textSize="@dimen/text_size_4" />
+
+    <com.iningke.zhangzhq.myview.MyGridView
+        android:id="@+id/item_mine_fix_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x20"
+        android:numColumns="3"
+        android:scrollbars="none"></com.iningke.zhangzhq.myview.MyGridView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/x32"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/item_mine_fix_btn_left"
+            android:layout_width="@dimen/x158"
+            android:layout_height="@dimen/x60"
+            android:background="@mipmap/btn_shape_stroke_gray"
+            android:gravity="center"
+            android:text="删除工单"
+            android:textColor="@color/txt_black"
+            android:textSize="@dimen/text_size_5"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/item_mine_fix_btn_right"
+            android:layout_width="@dimen/x158"
+            android:layout_height="@dimen/x60"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x22"
+            android:background="@mipmap/btn_shape_stroke_blue"
+            android:gravity="center"
+            android:text="去评论"
+            android:textColor="@color/theme"
+            android:textSize="@dimen/text_size_5"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x14"
+        android:layout_marginTop="@dimen/x30"
+        android:background="@color/background" />
+</LinearLayout>

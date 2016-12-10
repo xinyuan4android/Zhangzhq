@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_manage_select_listView_txt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x88"
+        android:text="asdf"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/x22"
+        android:background="@drawable/selector_listview"
+        android:textColor="@color/txt_black"
+        android:textSize="@dimen/text_size_3" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/split_line" />
+</LinearLayout>

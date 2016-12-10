@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.SelectAreaActivity">
+
+    <include layout="@layout/common_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/x20"
+            android:background="@drawable/shape_search"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/manage_select_editText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/x24"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:padding="@dimen/x10"
+                android:textColor="@color/txt_second"
+                android:textColorHint="@color/txt_hint"
+                android:textSize="@dimen/text_size_6" />
+
+            <ImageView
+                android:layout_width="@dimen/x36"
+                android:layout_height="@dimen/x36"
+                android:layout_marginRight="@dimen/x20"
+                android:src="@mipmap/search" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:paddingBottom="@dimen/x22"
+        android:paddingLeft="@dimen/x24"
+        android:paddingTop="@dimen/x40"
+        android:text="区域"
+        android:textColor="@color/txt_second_8b8d8f"
+        android:textSize="@dimen/text_size_5" />
+
+    <ListView
+        android:id="@+id/manage_select_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"></ListView>
+</LinearLayout>

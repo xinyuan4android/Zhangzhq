@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.joooonho.SelectableRoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/item_listView_gridView_img"
+        android:layout_width="@dimen/x190"
+        android:layout_height="@dimen/x190"
+        android:scaleType="centerCrop"
+        app:sriv_left_bottom_corner_radius="10dip"
+        app:sriv_left_top_corner_radius="10dip"
+        app:sriv_right_bottom_corner_radius="10dip"
+        app:sriv_right_top_corner_radius="10dip" />
+
+</LinearLayout>

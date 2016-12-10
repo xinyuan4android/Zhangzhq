@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".home.DeviceManageResultActivity">
+
+    <include layout="@layout/common_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/theme"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/x20"
+                android:paddingLeft="@dimen/x22"
+                android:paddingTop="@dimen/x20">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/deviceinfo_deviceno" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x10"
+                        android:text="设备编号"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_3" />
+
+                    <TextView
+                        android:id="@+id/deviceInfo_txt_deviceNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:text="465415341545"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x20"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/deviceinfo_devicedate" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x10"
+                        android:text="配属时间"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_3" />
+
+                    <TextView
+                        android:id="@+id/deviceInfo_txt_deviceDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:text="2016-11-11 13:24"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x20"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/deviceinfo_personsave" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x10"
+                        android:text="保管人员"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_3" />
+
+                    <TextView
+                        android:id="@+id/deviceInfo_txt_personSave"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:text="张三"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x20"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/deviceinfo_departmentsave" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x10"
+                        android:text="保管部门"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_3" />
+
+                    <TextView
+                        android:id="@+id/deviceInfo_txt_departmentSave"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:text="设备管理部"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x20"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/deviceinfo_chusuosave" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x10"
+                        android:text="保管处所"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_3" />
+
+                    <TextView
+                        android:id="@+id/deviceInfo_txt_chusuoSave"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:text="调配处"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x20"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/deviceinfo_personinput" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x10"
+                        android:text="录入人员"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_3" />
+
+                    <TextView
+                        android:id="@+id/deviceInfo_txt_personInput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:text="李四"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/x20"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/deviceinfo_ps" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x10"
+                        android:text="备        注"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_3" />
+
+                    <TextView
+                        android:id="@+id/deviceInfo_txt_ps"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:text="——"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_3" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/x10"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/deviceInfo_linear_factoryInfo"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_listview"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/x80"
+                            android:layout_height="@dimen/x80"
+                            android:layout_margin="@dimen/x20"
+                            android:src="@mipmap/deviceinfo_factoryinfo" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="厂商信息"
+                            android:textColor="@color/txt_black"
+                            android:textSize="@dimen/text_size_4" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="@dimen/x2"
+                        android:layout_height="match_parent"
+                        android:background="@color/split_line" />
+
+                    <LinearLayout
+                        android:id="@+id/deviceInfo_linear_deviceInfo"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_listview"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/x80"
+                            android:layout_height="@dimen/x80"
+                            android:layout_margin="@dimen/x20"
+                            android:src="@mipmap/deviceinfo_deviceinfo" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="设备信息"
+                            android:textColor="@color/txt_black"
+                            android:textSize="@dimen/text_size_4" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x2"
+                    android:background="@color/split_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/deviceInfo_linear_allocationRecord"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_listview"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/x80"
+                            android:layout_height="@dimen/x80"
+                            android:layout_margin="@dimen/x20"
+                            android:src="@mipmap/deviceinfo_allocationrecord" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="设备调拨记录"
+                            android:textColor="@color/txt_black"
+                            android:textSize="@dimen/text_size_4" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="@dimen/x2"
+                        android:layout_height="match_parent"
+                        android:background="@color/split_line" />
+
+                    <LinearLayout
+                        android:id="@+id/deviceInfo_linear_scrapTable"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_listview"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/x80"
+                            android:layout_height="@dimen/x80"
+                            android:layout_margin="@dimen/x20"
+                            android:src="@mipmap/deviceinfo_scraptable" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="设备报废表"
+                            android:textColor="@color/txt_black"
+                            android:textSize="@dimen/text_size_4" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x2"
+                    android:background="@color/split_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/deviceInfo_linear_applications"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_listview"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/x80"
+                            android:layout_height="@dimen/x80"
+                            android:layout_margin="@dimen/x20"
+                            android:src="@mipmap/deviceinfo_applications" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="立项或申购"
+                            android:textColor="@color/txt_black"
+                            android:textSize="@dimen/text_size_4" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="@dimen/x2"
+                        android:layout_height="match_parent"
+                        android:background="@color/split_line" />
+
+                    <LinearLayout
+                        android:id="@+id/deviceInfo_linear_maintain"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_listview"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/x80"
+                            android:layout_height="@dimen/x80"
+                            android:layout_margin="@dimen/x20"
+                            android:src="@mipmap/deviceinfo_maintain" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="维修和保养"
+                            android:textColor="@color/txt_black"
+                            android:textSize="@dimen/text_size_4" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
