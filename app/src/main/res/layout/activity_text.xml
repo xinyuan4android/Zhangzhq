@@ -7,9 +7,10 @@
 
 
     <com.iningke.zhangzhq.activity.MyZoomImageView
+        android:id="@+id/img"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="matrix"
-        android:src="@mipmap/splash_img"></com.iningke.zhangzhq.activity.MyZoomImageView>
+        android:src="@mipmap/home_icon_device"></com.iningke.zhangzhq.activity.MyZoomImageView>
 
 </LinearLayout>

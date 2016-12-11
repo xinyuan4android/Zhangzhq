@@ -20,6 +20,12 @@ import com.iningke.zhangzhq.service.ServiceFragment;
 
 import butterknife.Bind;
 
+/**
+ * for github
+ *
+ * @author hxy
+ * @date 2016/12/10
+ */
 public class MainActivity extends ZhangzhqActivity implements RadioGroup.OnCheckedChangeListener {
 
 

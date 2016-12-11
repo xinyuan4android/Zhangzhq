@@ -1,6 +1,7 @@
 package com.iningke.zhangzhq.activity;
 
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.graphics.Matrix;
 import android.graphics.RectF;
 import android.graphics.drawable.Drawable;
@@ -24,9 +25,10 @@ public class MyZoomImageView extends ImageView implements View.OnTouchListener,
         ScaleGestureDetector.OnScaleGestureListener, ViewTreeObserver.OnGlobalLayoutListener {
     private static final String TAG = MyZoomImageView.class.getSimpleName();
 
-    public static final float SCALE_MAX = 4.0f; //缩放最大比例
-    public static final float SCALE_MIN = 0.25f;//缩放最小比例
-    public static final float SCALE_MID = 2.0f;//缩放中间比例
+    public static float SCALE_MAX = 3.0f; //缩放最大比例
+    public static float SCALE_MIN = 0.25f;//缩放最小比例
+    public static float SCALE_MID = 1.5f;//缩放中间比例
+
     /**
      * 初始化时的缩放比例，如果图片宽或高大于屏幕，此值将小于0
      */
@@ -61,17 +63,18 @@ public class MyZoomImageView extends ImageView implements View.OnTouchListener,
                 new GestureDetector.SimpleOnGestureListener() {
                     @Override
                     public boolean onDoubleTap(MotionEvent e) {
+                        //双击手势
                         if (isAutoScale == true)
                             return true;
 
                         float x = e.getX();
                         float y = e.getY();
                         Log.e("DoubleTap", getScale() + " , " + initScale);
-                        if (getScale() < SCALE_MID) {
+                        if (getScale() < initScale && getScale() > SCALE_MIN) {
                             MyZoomImageView.this.postDelayed(
-                                    new AutoScaleRunnable(SCALE_MID, x, y), 16);
+                                    new AutoScaleRunnable(initScale, x, y), 16);
                             isAutoScale = true;
-                        } else if (getScale() >= SCALE_MID
+                        } else if (getScale() >= initScale
                                 && getScale() < SCALE_MAX) {
                             MyZoomImageView.this.postDelayed(
                                     new AutoScaleRunnable(SCALE_MAX, x, y), 16);
@@ -85,9 +88,18 @@ public class MyZoomImageView extends ImageView implements View.OnTouchListener,
                         return true;
                     }
                 });
+        //是一个距离，表示滑动的时候，手的移动要大于这个距离才开始移动控件。如果小于这个距离就不触发移动控件，如viewpager就是用这个距离来判断用户是否翻页
         mTouchSlop = ViewConfiguration.get(context).getScaledTouchSlop();
         super.setScaleType(ScaleType.MATRIX);
         this.setOnTouchListener(this);
+    }
+
+    @Override
+    public void setImageBitmap(Bitmap bm) {
+
+        super.setImageBitmap(bm);
+
+
     }
 
     @Override
@@ -103,12 +115,12 @@ public class MyZoomImageView extends ImageView implements View.OnTouchListener,
          * 缩放的范围控制
          */
         if ((scale < SCALE_MAX && scaleFactor > 1.0f)
-                || (scale > initScale && scaleFactor < 1.0f)) {
+                || (scale > SCALE_MIN && scaleFactor < 1.0f)) {
             /**
              * 最大值最小值判断
              */
-            if (scaleFactor * scale < initScale) {
-                scaleFactor = initScale / scale;
+            if (scaleFactor * scale < SCALE_MIN) {
+                scaleFactor = SCALE_MIN / scale;
             }
             if (scaleFactor * scale > SCALE_MAX) {
                 scaleFactor = SCALE_MAX / scale;
@@ -207,6 +219,23 @@ public class MyZoomImageView extends ImageView implements View.OnTouchListener,
                 break;
 
             case MotionEvent.ACTION_UP:
+                float scale = getScale();
+                if (scale < initScale) {
+                    /**
+                     * 如果手指抬起的时候 ， 当前图片的缩放比例 比初始化比例小，就设置当前图片为初始化比例。
+                     * 设置缩放比例
+                     */
+//                    mScaleMatrix.postScale(initScale / scale, initScale / scale, x,
+//                            y);
+//                    checkBorderAndCenterWhenScale();
+//                    setImageMatrix(mScaleMatrix);
+                    MyZoomImageView.this.postDelayed(
+                            new AutoScaleRunnable(initScale, x, y), 16);
+                    isAutoScale = true;
+                }
+                Log.e(TAG, "ACTION_UP");
+                lastPointerCount = 0;
+                break;
             case MotionEvent.ACTION_CANCEL:
                 Log.e(TAG, "ACTION_UP");
                 lastPointerCount = 0;
@@ -361,9 +390,15 @@ public class MyZoomImageView extends ImageView implements View.OnTouchListener,
             if (dw > width && dh > height) {
                 scale = Math.min(width * 1.0f / dw, height * 1.0f / dh);
             }
+            //如果图片的 宽和高都小于屏幕 ，则让 其按比例 放大。适应屏幕
+            if (dw < width && dh < height) {
+                scale = Math.min(width * 1.0f / dw, height * 1.0f / dh);
+            }
             initScale = scale;
             LogUtils.e("initScale == " + initScale);
-            initScale = initScale < SCALE_MIN ? initScale : SCALE_MIN;
+            SCALE_MIN *= initScale;
+            SCALE_MID *= initScale;
+            SCALE_MAX *= initScale;
             // 图片移动至屏幕中心
             mScaleMatrix.postTranslate((width - dw) / 2, (height - dh) / 2);
             mScaleMatrix
@@ -375,6 +410,7 @@ public class MyZoomImageView extends ImageView implements View.OnTouchListener,
 
     /**
      * 自动缩放的任务
+     * 让缩放 不那么生硬， 缓慢的缩放。
      *
      * @author zhy
      */
@@ -411,6 +447,7 @@ public class MyZoomImageView extends ImageView implements View.OnTouchListener,
         public void run() {
             // 进行缩放
             mScaleMatrix.postScale(tmpScale, tmpScale, x, y);
+            com.iningke.zhangzhq.utils.LogUtils.e("tmpscale = " + tmpScale + "mTargetScale ==" + mTargetScale);
             checkBorderAndCenterWhenScale();
             setImageMatrix(mScaleMatrix);
 
